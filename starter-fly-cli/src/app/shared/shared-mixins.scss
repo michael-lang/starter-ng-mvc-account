@@ -1,0 +1,64 @@
+@import '~@angular/material/theming';
+
+$lf-typography-config: mat-typography-config(
+  $font-family: '"Open Sans" "Helvetica Neue" sans-serif',
+  $display-4:    mat-typography-level(112px, 112px, 300),
+  $display-3:    mat-typography-level(56px, 56px, 300),
+  $display-2:    mat-typography-level(45px, 48px, 300),
+  $display-1:    mat-typography-level(34px, 40px, 300),
+  $headline:     mat-typography-level(24px, 32px, 400),
+  $title:        mat-typography-level(20px, 32px, 500),
+  $subheading-2: mat-typography-level(16px, 28px, 400),
+  $subheading-1: mat-typography-level(15px, 24px, 400),
+  $body-2:       mat-typography-level(14px, 24px, 500),
+  $body-1:       mat-typography-level(14px, 20px, 400),
+  $caption:      mat-typography-level(12px, 20px, 400),
+  $button:       mat-typography-level(14px, 14px, 500),
+  $input:        mat-typography-level(inherit, 1.125, 400)
+);
+
+@mixin shared-typography() {
+	@include angular-material-typography($lf-typography-config);
+	
+	.bold, strong {
+	  font-weight: 700;
+	}
+	.uppercase {
+	  text-transform: uppercase;
+	}
+}
+
+@mixin shared-layouts() {
+  .menu-bar {
+    box-sizing: border-box;
+    padding-left: 3.5rem;
+    a {
+      box-sizing: inherit;
+      display: inline-block;
+      position: relative;
+      height: 100%;
+      padding: 1rem;
+      text-decoration: none;
+      &::first-child {
+        margin-left: 1.2rem;
+      }
+    }
+  }
+  .mat-toolbar .mat-icon {
+    height: 45px;
+    width:80px;
+    font-size: 45px;
+  }
+  .container {
+    width: 1096px;
+    margin: 1rem auto;
+  }
+  .toolbar-spacer {
+    flex: 1 1 auto;
+  }
+}
+
+@mixin shared-core() {
+  @include shared-typography();
+  @include shared-layouts();
+}

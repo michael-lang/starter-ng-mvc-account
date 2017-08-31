@@ -1,0 +1,39 @@
+<md-card>
+    <form [formGroup]="registerForm" class="content active" novalidate (ngSubmit)="register(registerForm.value)">
+      <md-card-content>
+        <md-input-container>
+          <input mdInput placeholder="User Name" formControlName="userName" name="userName" value=""/>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput placeholder="Email Address" type="email" formControlName="emailAddress" name="emailAddress" value=""/>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput placeholder="Phone Number" type="tel" formControlName="phoneNumber" name="phoneNumber" value=""/>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput placeholder="First Name" formControlName="firstName" name="firstName" value=""/>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput placeholder="Last Name" formControlName="lastName" name="lastName" value=""/>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput [mdDatepicker]="dobPicker" placeholder="Birth Date" formControlName="dob" name="dob" value=""/>
+          <button mdSuffix [mdDatepickerToggle]="dobPicker"></button>
+          <md-datepicker #dobPicker></md-datepicker>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput placeholder="Password" type="password" formControlName="password" name="password" value=""/>
+        </md-input-container>
+        <div *ngIf="(status$ | async) === 'pending'">
+          <md-spinner [color]="'primary'"></md-spinner>
+        </div>
+      </md-card-content>
+      <md-card-actions align="end">
+        <span color="warn" *ngIf="((message$ | async) || '').length > 0">{{message$ | async}}</span>
+        <button md-raised-button color="primary">Register</button>
+      </md-card-actions>
+      <md-card-content>
+        Already have an account? <a [routerLink]="['/account/login']" [queryParams]="{returnUrl: modelLocal.returnUrl}">login now</a>
+      </md-card-content>
+    </form>
+  </md-card>

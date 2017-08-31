@@ -1,0 +1,9 @@
+<div  class="layout-fill column">
+  <div class="main-toolbar">
+    <ng-content select="[toolbar-content], [lf-toolbar-content]"></ng-content>
+  </div>
+  <div flex class="content md-content">
+    <ng-content></ng-content>
+  </div>
+  <ng-content select="[lf-layout-footer]"></ng-content>
+</div>

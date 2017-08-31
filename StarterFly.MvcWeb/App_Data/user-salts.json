@@ -1,0 +1,29 @@
+﻿[
+  {
+    "RecordID": 1,
+    "UserID": "0fb7bda7-78e0-4713-8904-b95364e75abc",
+    "PasswordSalt": "b95364e75abc",
+    "ResetCodeExpiration": "2018-07-12T06:26:20 +05:00",
+    "ResetCode": "",
+    "HashGroup": 456,
+    "HashName": "sha2"
+  },
+  {
+    "RecordID": 2,
+    "UserID": "909dd744-46a0-45c4-9449-7c81cbe6bbd1",
+    "PasswordSalt": "46a045c4",
+    "ResetCodeExpiration": "2018-07-12T06:26:20 +05:00",
+    "ResetCode": "",
+    "HashGroup": 546,
+    "HashName": "sha2"
+  },
+  {
+    "RecordID": 3,
+    "UserID": "c250ccdc-65e5-4d22-bc4e-bbbf639022db",
+    "PasswordSalt": "c250ccdc",
+    "ResetCodeExpiration": "2018-07-12T06:26:20 +05:00",
+    "ResetCode": "",
+    "HashGroup": 816,
+    "HashName": "sha2"
+  }
+]

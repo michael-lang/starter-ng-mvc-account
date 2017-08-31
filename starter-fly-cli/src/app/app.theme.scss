@@ -1,0 +1,28 @@
+@import '~@angular/material/theming';
+@import './app.theme.variables';
+@import './shared/shared-mixins';
+@import './shared/layout';
+
+@include mat-core();
+@include shared-core();
+
+@mixin app-theme($theme, $dark-theme) {
+	$primary: map-get($theme, primary);
+	$contrast: map-get($primary, contrast);
+	@include angular-material-theme($theme);
+
+	.main-toolbar .menu-bar {
+		background-color: mat-color($primary, 500);
+		a {
+			color: mat-color($contrast, 500);
+			&.selected {
+				background-color: mat-color($primary, 400);
+			}
+		}
+	}
+
+	&.dark-theme {
+		@include angular-material-theme($dark-theme);
+	}
+}
+@include app-theme($main-app-theme, $main-app-dark-theme);

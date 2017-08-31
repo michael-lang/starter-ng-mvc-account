@@ -1,0 +1,32 @@
+﻿[
+  {
+    "UserId": "A01",
+    "UserName": "mlang",
+    "EmailAddress": "test+a01@nexul.com",
+    "PhoneNumber": "314-555-1234",
+    "FirstName": "Michael",
+    "LastName": "Lang",
+    "DateOfBirth": "1979-01-28",
+    "Role": "member"
+  },
+  {
+    "UserId": "A02",
+    "UserName": "bwhite",
+    "EmailAddress": "test+a02@nexul.com",
+    "PhoneNumber": "314-555-1235",
+    "FirstName": "Betty",
+    "LastName": "White",
+    "DateOfBirth": "1949-02-21",
+    "Role": "member"
+  },
+  {
+    "UserId": "A03",
+    "UserName": "sfox",
+    "EmailAddress": "test+a03@nexul.com",
+    "PhoneNumber": "314-555-1236",
+    "FirstName": "Sandy",
+    "LastName": "Fox",
+    "DateOfBirth": "1969-06-09",
+    "Role": "member"
+  }
+]

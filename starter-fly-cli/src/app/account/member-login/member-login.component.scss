@@ -1,0 +1,15 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mat-card {
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 50px;
+    width: 355px;
+
+    .mat-input-container {
+        width: 100%;
+    }
+}

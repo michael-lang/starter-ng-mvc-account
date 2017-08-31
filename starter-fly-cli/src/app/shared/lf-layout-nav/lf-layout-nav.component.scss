@@ -1,0 +1,31 @@
+:host {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    .snap-menu-button {
+      margin-left: 0px;
+    }
+    &.layout-fill, &>.layout-fill{
+      height: 100vh;
+      overflow:hidden;
+      margin:0;
+    }
+    .flex{
+      overflow: auto;
+    }
+    //position relative to create "stacking contexts", keeps the z indexing independent so we
+    //  don't have to keep playing 1up with the z index.
+    .main-toolbar {
+      position: relative;
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 0;
+      flex-grow: 1; //take remaining space
+    }
+  }
+  

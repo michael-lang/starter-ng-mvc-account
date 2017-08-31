@@ -1,0 +1,21 @@
+<lf-layout-nav layout-fill>
+  <div lf-toolbar-content>
+    <md-toolbar class="mat-elevation-z4 menu-bar" color="primary">
+      <md-icon>whatshot</md-icon>
+      <a md-list-item md-ripple routerLinkActive="selected" routerLink="/account"
+        *ngIf="'canView' | allowedAction: 'account-dashboard'">
+        Account
+      </a>
+      <div class="toolbar-spacer"></div>
+      <a md-list-item md-ripple routerLinkActive="selected" routerLink="/account/login"
+        *ngIf="(user | async) !== null">
+        Logout
+      </a>
+    </md-toolbar>
+  </div>
+  <!-- account-layout works! -->
+  <router-outlet></router-outlet>
+  <div lf-layout-footer>
+    Footer
+  </div>
+</lf-layout-nav>

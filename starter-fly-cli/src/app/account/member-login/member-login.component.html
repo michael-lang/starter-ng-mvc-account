@@ -1,0 +1,22 @@
+<md-card>
+  <form [formGroup]="loginForm" class="content active" novalidate (ngSubmit)="login(loginForm.value)">
+    <md-card-content>
+      <md-input-container>
+        <input mdInput placeholder="User Name or Email" formControlName="identifier" name="identifier" value=""/>
+      </md-input-container>
+      <md-input-container>
+        <input mdInput placeholder="Password" type="password" formControlName="password" name="password" value=""/>
+      </md-input-container>
+      <div *ngIf="(status$ | async) === 'pending'">
+        <md-spinner [color]="'primary'"></md-spinner>
+      </div>
+    </md-card-content>
+    <md-card-actions align="end">
+      <span color="warn" *ngIf="((message$ | async) || '').length > 0">{{message$ | async}}</span>
+      <button md-raised-button color="primary">Login</button>
+    </md-card-actions>
+    <md-card-content>
+      No account? <a [routerLink]="['/account/register']" [queryParams]="{returnUrl: modelLocal.returnUrl}">create one now</a>
+    </md-card-content>
+  </form>
+</md-card>

@@ -1,0 +1,41 @@
+﻿[
+  {
+    "UserID": "{0fb7bda7-78e0-4713-8904-b95364e75abc}",
+    "Name": "mlang",
+    "PasswordHash": "00c3334be75a0a927d9c05d71222afcd824dc8886a04db1ab005b8e77cd7dc3d",
+    "PasswordHashUpdatedDate": "2014-07-12T06:26:20 +05:00",
+    "PasswordUpdatedDate": "2014-07-12T06:26:20 +05:00",
+    "IsDeleted": false,
+    "IsGuest": false,
+    "CreatedDate": "2014-07-12T06:26:20 +05:00",
+    "CreatedByUserID": "{00000000-0000-0000-0000-000000000000}",
+    "UpdatedDate": "2014-07-12T06:26:20 +05:00",
+    "UpdatedByUserID": "{00000000-0000-0000-0000-000000000000}"
+  },
+  {
+    "UserID": "{909dd744-46a0-45c4-9449-7c81cbe6bbd1}",
+    "Name": "bwhite",
+    "PasswordHash": "9d57a928b1cc4b7fc96c687b9e3d6a1ca7c97087ed5f1278e7daf5c295444c0c",
+    "PasswordHashUpdatedDate": "2014-08-12T06:26:20 +05:00",
+    "PasswordUpdatedDate": "2014-08-12T06:26:20 +05:00",
+    "IsDeleted": false,
+    "IsGuest": false,
+    "CreatedDate": "2014-08-12T06:26:20 +05:00",
+    "CreatedByUserID": "{00000000-0000-0000-0000-000000000000}",
+    "UpdatedDate": "2014-08-12T06:26:20 +05:00",
+    "UpdatedByUserID": "{00000000-0000-0000-0000-000000000000}"
+  },
+  {
+    "UserID": "{c250ccdc-65e5-4d22-bc4e-bbbf639022db}",
+    "Name": "sfox",
+    "PasswordHash": "8077f5fa3dd34bfe4a6dac6662e506496a89166494edbdcbc1edadcbb30191d3",
+    "PasswordHashUpdatedDate": "2014-09-12T06:26:20 +05:00",
+    "PasswordUpdatedDate": "2014-09-12T06:26:20 +05:00",
+    "IsDeleted": false,
+    "IsGuest": false,
+    "CreatedDate": "2014-09-12T06:26:20 +05:00",
+    "CreatedByUserID": "{00000000-0000-0000-0000-000000000000}",
+    "UpdatedDate": "2014-09-12T06:26:20 +05:00",
+    "UpdatedByUserID": "{00000000-0000-0000-0000-000000000000}"
+  }
+]
