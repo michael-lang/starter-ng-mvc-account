@@ -10,7 +10,6 @@ import 'hammerjs';
 import { environment } from '../environments/environment';
 import { MdNativeDateModule } from '@angular/material';
 
-import { AppRoutingModule } from './app-routing.module';
 import { appReducers, appMetaReducers } from './app.store';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
@@ -27,7 +26,6 @@ import { AccountStoreService } from './account/account.store-service';
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
     SharedModule,
     MdNativeDateModule,
     AccountModule,
