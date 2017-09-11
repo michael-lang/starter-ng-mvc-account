@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { MdSidenav, MdSidenavToggleResult } from '@angular/material';
+import { MdSidenav } from '@angular/material';
 
 @Component({
   selector: 'lf-layout',
@@ -9,13 +9,13 @@ import { MdSidenav, MdSidenavToggleResult } from '@angular/material';
 export class LfLayoutComponent {
   @ViewChild(MdSidenav) sidenav: MdSidenav;
 
-  public toggle(): Promise<MdSidenavToggleResult> {
+  public toggle(): Promise<any> {
     return this.sidenav.toggle();
   }
-  public open(): Promise<MdSidenavToggleResult> {
+  public open(): Promise<any> {
     return this.sidenav.open();
   }
-  public close(): Promise<MdSidenavToggleResult> {
+  public close(): Promise<any> {
     return this.sidenav.close();
   }
 }

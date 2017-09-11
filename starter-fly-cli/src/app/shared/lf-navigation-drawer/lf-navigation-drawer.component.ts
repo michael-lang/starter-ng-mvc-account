@@ -4,7 +4,6 @@ import {
 } from '@angular/core';
 import { SafeStyle, DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
-import { MdSidenavToggleResult } from '@angular/material';
 import { LfLayoutComponent } from '../lf-layout/lf-layout.component';
 
 @Directive({
@@ -85,17 +84,17 @@ export class LfNavigationDrawerComponent implements OnInit, OnDestroy {
   }
 
   //proxy toggle method to access sidenav from outside (lf-layout template)
-  public toggle(): Promise<MdSidenavToggleResult> {
+  public toggle(): Promise<any> {
     return this._layout.toggle();
   }
 
   //proxy open method to access sidenav from outside (lf-layout template)
-  public open(): Promise<MdSidenavToggleResult> {
+  public open(): Promise<any> {
     return this._layout.open();
   }
 
   //proxy close method to access sidenav from outside (lf-layout template)
-  public close(): Promise<MdSidenavToggleResult> {
+  public close(): Promise<any> {
     return this._layout.close();
   }
 }

@@ -17,8 +17,8 @@
           <input mdInput placeholder="Last Name" formControlName="lastName" name="lastName" value=""/>
         </md-input-container>
         <md-input-container>
-          <input mdInput [mdDatepicker]="dobPicker" placeholder="Birth Date" formControlName="dob" name="dob" value=""/>
-          <button mdSuffix [mdDatepickerToggle]="dobPicker"></button>
+          <input mdInput [mdDatepicker]="dobPicker" placeholder="Birth Date" formControlName="dob" name="dob"/>
+          <md-datepicker-toggle mdSuffix [for]="dobPicker"></md-datepicker-toggle>
           <md-datepicker #dobPicker></md-datepicker>
         </md-input-container>
         <md-input-container>

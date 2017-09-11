@@ -33,7 +33,7 @@ export class RegisterModel {
     phoneNumber: string; //optional for notifications
     firstName: string;
     lastName: string;
-    dob: Date; //required, for age restriction enforcement
+    dob: Date | null; //required, for age restriction enforcement
     password: string;
     returnUrl: string; //route to redirect to on successful register
 }
